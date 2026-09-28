@@ -1,0 +1,18 @@
+services:
+  backand:
+    image: dutraspk/server_app:1.0
+    ports:
+      - "6941:8000"
+    networks:
+      - app-network
+
+  frontend:
+    image: dutraspk/app_detect:1.0
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
