@@ -9,7 +9,7 @@ services:
   frontend:
     image: dutraspk/app_detect:1.0
     ports:
-      - "8080:8080"
+      - "8010:8080"
     networks:
       - app-network
 

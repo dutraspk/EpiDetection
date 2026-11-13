@@ -102,6 +102,10 @@ def health():
         "camera": cap.isOpened()
     }
 
+@app.get("/getEpi")
+def getEpi():
+    
+
 
 thread = threading.Thread(
     target=detection_loop,
