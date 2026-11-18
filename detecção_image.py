@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO("yolo.pt")
-results = model("foto.jpg", save=True)
+model = YOLO("/home/dutra/Projetos/datayolo/datatrain/yolo.pt")
+results = model("/home/dutra/Downloads/tr.jpeg", save=True)
 
 print("foi")
